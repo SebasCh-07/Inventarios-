@@ -72,10 +72,10 @@ create table categorias_unidad_medida (
 );
 
 create table unidades_medida (
-    codigo_udm char(2) not null,
+    nombre char(5) not null,
     descripcion varchar(100) not null,
     categoria_udm char(2) not null,
-    constraint unidades_medida_pk primary key (codigo_udm),
+    constraint unidades_medida_pk primary key (nombre),
     constraint unidades_medida_fk foreign key (categoria_udm) references categorias_unidad_medida(codigo_udm)
 );
 
@@ -89,7 +89,7 @@ create table productos (
     categoria int not null,
     stock int not null,
     constraint productos_pk primary key (codigo_pro),
-    constraint productos_fk1 foreign key (udm) references unidades_medida(codigo_udm),
+    constraint productos_fk1 foreign key (udm) references unidades_medida(nombre),
     constraint productos_fk2 foreign key (categoria) references categorias(codigo_cat)
 );
 
@@ -174,19 +174,19 @@ values('V','Volumen');
 insert into Categorias_Unidad_Medida(codigo_udm,nombre)
 values('P','Peso');
 
-insert into Unidades_medida(codigo_udm,descripcion,categoria_udm)
+insert into Unidades_medida(nombre,descripcion,categoria_udm)
 values('ml','mililitros','V');
-insert into Unidades_medida(codigo_udm,descripcion,categoria_udm)
+insert into Unidades_medida(nombre,descripcion,categoria_udm)
 values('L','litros','V');
-insert into Unidades_medida(codigo_udm,descripcion,categoria_udm)
+insert into Unidades_medida(nombre,descripcion,categoria_udm)
 values('U','unidad','U');
-insert into Unidades_medida(codigo_udm,descripcion,categoria_udm)
+insert into Unidades_medida(nombre,descripcion,categoria_udm)
 values('D','docena','U');
-insert into Unidades_medida(codigo_udm,descripcion,categoria_udm)
+insert into Unidades_medida(nombre,descripcion,categoria_udm)
 values('g','gramos','P');
-insert into Unidades_medida(codigo_udm,descripcion,categoria_udm)
+insert into Unidades_medida(nombre,descripcion,categoria_udm)
 values('Kg','Kilogramos','P');
-insert into Unidades_medida(codigo_udm,descripcion,categoria_udm)
+insert into Unidades_medida(nombre,descripcion,categoria_udm)
 values('lb','libras','P');
 
 insert into productos(nombre,udm,precio_venta,tiene_iva,coste,categoria,stock)
