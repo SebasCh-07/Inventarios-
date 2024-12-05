@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
+import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
@@ -41,6 +42,36 @@ public class ServiciosProducto {
 		try {
 			producto.insertar(produ);
 			return Response.ok().build();
+		} catch (KrakedevException e) {
+			e.printStackTrace();
+			return Response.serverError().build();
+		}
+	} 
+	
+
+	@Path("actualizar")
+	@PUT
+	@Consumes(MediaType.APPLICATION_JSON)
+	public Response recibir(Producto produ) {
+		ProductosBDD producto = new ProductosBDD();
+		try {
+			producto.actualizar(produ);
+			return Response.ok().build();
+		} catch (KrakedevException e) {
+			e.printStackTrace();
+			return Response.serverError().build();
+		}
+	} 
+	
+	@Path("buscarProdu/{sub}")
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	public Response buscarProducto( @PathParam("sub") int codigo) {
+		ProductosBDD produ = new ProductosBDD();
+		Producto Producto = null;
+		try {
+			Producto = produ.buscarProducto(codigo);
+			return Response.ok(Producto).build();
 		} catch (KrakedevException e) {
 			e.printStackTrace();
 			return Response.serverError().build();

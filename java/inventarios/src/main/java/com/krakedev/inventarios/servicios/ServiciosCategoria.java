@@ -7,25 +7,24 @@ import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import com.krakedev.inventarios.bdd.PedidosBDD;
-import com.krakedev.inventarios.entidades.Pedido;
+import com.krakedev.inventarios.bdd.CategoriasBDD;
+import com.krakedev.inventarios.entidades.Categoria;
 import com.krakedev.inventarios.excepciones.KrakedevException;
 
-@Path("pedidos")
-public class ServicioPedidos {
+@Path("categorias")
+public class ServiciosCategoria {
 	
-	@Path("registrar")
+	@Path("crear")
 	@POST
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Response crear(Pedido pedido) {
-		PedidosBDD producto = new PedidosBDD();
+	public Response crear(Categoria cat) {
+		CategoriasBDD categ = new CategoriasBDD();
 		try {
-			producto.insertar(pedido);
+			categ.insertar(cat);
 			return Response.ok().build();
 		} catch (KrakedevException e) {
 			e.printStackTrace();
@@ -33,13 +32,13 @@ public class ServicioPedidos {
 		}
 	} 
 	
-	@Path("recibir")
+	@Path("actualizar")
 	@PUT
 	@Consumes(MediaType.APPLICATION_JSON)
-	public Response recibir(Pedido pedido) {
-		PedidosBDD producto = new PedidosBDD();
+	public Response recibir(Categoria cat) {
+		CategoriasBDD categ = new CategoriasBDD();
 		try {
-			producto.actualizar(pedido);
+			categ.actualizar(cat);
 			return Response.ok().build();
 		} catch (KrakedevException e) {
 			e.printStackTrace();
@@ -47,15 +46,15 @@ public class ServicioPedidos {
 		}
 	} 
 	
-	@Path("buscarPorProve/{sub}")
+	@Path("buscar")
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
-	public Response buscar( @PathParam("sub") String identidicador) {
-		PedidosBDD pedido = new PedidosBDD();
-		ArrayList<Pedido> pedidos = null;
+	public Response buscar() {
+		CategoriasBDD cat = new CategoriasBDD();
+		ArrayList<Categoria> categs = null;
 		try {
-			pedidos = pedido.buscar(identidicador);
-			return Response.ok(pedidos).build();
+			categs = cat.buscar();
+			return Response.ok(categs).build();
 		} catch (KrakedevException e) {
 			e.printStackTrace();
 			return Response.serverError().build();
