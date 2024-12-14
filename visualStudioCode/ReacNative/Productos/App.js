@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, FlatList, TextInput, Button, Alert, ScrollView } from 'react-native';
-import { useState } from 'react'
+import { StyleSheet, Text, View, FlatList, TextInput, Button, Alert, ScrollView, Modal, TouchableOpacity } from 'react-native';
+import { useState } from 'react';
 
 let productos = [
   { nombre: "Doritos", categoria: "Snacks", precioCompra: 0.40, precioVenta: 0.45, id: 100 },
@@ -8,7 +8,7 @@ let productos = [
   { nombre: "Rufles", categoria: "Snacks", precioCompra: 0.40, precioVenta: 0.55, id: 102 },
   { nombre: "Coca Cola", categoria: "Bebida", precioCompra: 0.53, precioVenta: 0.65, id: 103 },
   { nombre: "Fuze Tea", categoria: "Bebida", precioCompra: 0.45, precioVenta: 0.50, id: 104 },
-]
+];
 
 let esNuevo = true;
 let indiceSeleccionado = -1;
@@ -19,7 +19,8 @@ export default function App() {
   const [nombre, setNombre] = useState("");
   const [categoria, setCategoria] = useState("");
   const [precioCompra, setPrecioCompra] = useState("");
-  const [numElementos, setNumElementos] = useState(productos.length)
+  const [numElementos, setNumElementos] = useState(productos.length);
+  const [modalVisible, setModalVisible] = useState(false);
 
   let limpiar = () => {
     setNombre(null);
@@ -27,8 +28,8 @@ export default function App() {
     setPrecioCompra(null);
     setPrecioVenta(null);
     setId(null);
-    esNuevo = true
-  }
+    esNuevo = true;
+  };
 
   let existenProductos = () => {
     for (let i = 0; i < productos.length; i++) {
@@ -37,7 +38,7 @@ export default function App() {
       }
     }
     return false;
-  }
+  };
 
   let calcularPrecioVenta = () => {
     let precioComprafloat = parseFloat(precioCompra);
@@ -47,81 +48,71 @@ export default function App() {
     } else {
       setPrecioVenta("");
     }
-  }
+  };
 
   let guardarProductos = () => {
     if (esNuevo) {
       if (existenProductos()) {
-        Alert.alert("INFO", "Ya existe un producto con ID " + id)
-        return
-      } else if (id == "") {
-        Alert.alert("INFO", "Debe llenar todos los campos")
-        return
-      } if (nombre == "") {
-        Alert.alert("INFO", "Debe llenar todos los campos")
-        return
-      } if (categoria == "") {
-        Alert.alert("INFO", "Debe llenar todos los campos")
-        return
-      } if (precioCompra == "") {
-        Alert.alert("INFO", "Debe llenar todos los campos")
-        return
+        Alert.alert("INFO", "Ya existe un producto con ID " + id);
+        return;
+      } else if (id == "" || nombre == "" || categoria == "" || precioCompra == "") {
+        Alert.alert("INFO", "Debe llenar todos los campos");
+        return;
       } else {
-        let nuevaProducto = { nombre: nombre, categoria: categoria, precioCompra: precioCompra, precioVenta: precioVenta, id: id }
+        let nuevaProducto = { nombre: nombre, categoria: categoria, precioCompra: precioCompra, precioVenta: precioVenta, id: id };
         productos.push(nuevaProducto);
-        limpiar()
+        limpiar();
       }
     } else {
       productos[indiceSeleccionado].nombre = nombre;
       productos[indiceSeleccionado].categoria = categoria;
       productos[indiceSeleccionado].precioCompra = precioCompra;
       productos[indiceSeleccionado].precioVenta = precioVenta;
-      limpiar()
+      limpiar();
     }
-    setNumElementos(productos.length)
-  }
+    setNumElementos(productos.length);
+  };
 
-  let ItemProducto = (props) => {
+  const eliminarProducto = () => {
+    productos.splice(indiceSeleccionado, 1);
+    setNumElementos(productos.length);
+    setModalVisible(false);
+  };
+
+  let ItemProducto = ({ indice, producto }) => {
     return (
-      <View style={styles.itemProducto}>
+      <TouchableOpacity style={styles.itemProducto} onPress={() => {
+        setNombre(producto.nombre);
+        setCategoria(producto.categoria);
+        setPrecioCompra(producto.precioCompra.toString());
+        calcularPrecioVenta();
+        setId(producto.id.toString());
+        esNuevo = false;
+        indiceSeleccionado = indice;
+      }}>
         <View style={styles.itemProducto1}>
-          <Text style={styles.textoPrincipal}>{props.producto.id}</Text>
+          <Text style={styles.textoPrincipal}>{producto.id}</Text>
         </View>
         <View style={styles.itemProducto2}>
-          <Text style={styles.textoPrincipal}>{props.producto.nombre}</Text>
-          <Text style={styles.textoSecundario}>{props.producto.categoria}</Text>
+          <Text style={styles.textoPrincipal}>{producto.nombre}</Text>
+          <Text style={styles.textoSecundario}>{producto.categoria}</Text>
         </View>
         <View style={styles.itemProducto3}>
-          <Text style={styles.textoTerciario}>{props.producto.precioVenta}</Text>
+          <Text style={styles.textoTerciario}>{producto.precioVenta}</Text>
         </View>
         <View style={styles.itemBotones}>
-
-          <Button title="✏️" onPress={() => {
-            setNombre(props.producto.nombre);
-            setCategoria(props.producto.categoria);
-            setPrecioCompra(props.producto.precioCompra.toString());
-            calcularPrecioVenta();
-            setId(props.producto.id.toString());
-            esNuevo = false;
-            indiceSeleccionado = props.indice;
-          }}
-          />
-          <Button
-            title="❌"
-            onPress={() => {
-              indiceSeleccionado = props.indice
-              productos.splice(indiceSeleccionado, 1);
-              setNumElementos(productos.length)
-            }} />
+          <Button title="❌" onPress={() => {
+            indiceSeleccionado = indice;
+            setModalVisible(true);
+          }} />
         </View>
-      </View>
-
+      </TouchableOpacity>
     );
-  }
+  };
+
   return (
     <View style={styles.container}>
       <ScrollView>
-
         <View>
           <View style={styles.ViewTitulo}>
             <Text style={styles.titulo}>PRODUCTOS</Text>
@@ -130,7 +121,7 @@ export default function App() {
             style={styles.txt}
             value={id}
             placeholder='CODIGO'
-            onChangeText={(id) => { setId(id) }}
+            onChangeText={id => { setId(id) }}
             keyboardType='numeric'
             editable={esNuevo}
           />
@@ -138,21 +129,21 @@ export default function App() {
             style={styles.txt}
             value={nombre}
             placeholder='NOMBRE'
-            onChangeText={(nombre) => setNombre(nombre)}
+            onChangeText={nombre => { setNombre(nombre) }}
           />
           <TextInput
             style={styles.txt}
             value={categoria}
             placeholder='CATEGORIA'
-            onChangeText={(categoria) => setCategoria(categoria)}
+            onChangeText={categoria => { setCategoria(categoria) }}
           />
           <TextInput
             style={styles.txt}
             value={precioCompra}
             placeholder='PRECIO DE COMPRA'
-            onChangeText={(precioCompra) => {
-              setPrecioCompra(precioCompra)
-              calcularPrecioVenta()
+            onChangeText={precioCompra => {
+              setPrecioCompra(precioCompra);
+              calcularPrecioVenta();
             }}
             keyboardType='numeric'
           />
@@ -160,7 +151,7 @@ export default function App() {
             style={styles.txt}
             value={precioVenta}
             placeholder='PRECIO DE VENTA'
-            onChangeText={(txt) => setPrecioVenta(txt)}
+            onChangeText={txt => { setPrecioVenta(txt) }}
             keyboardType='numeric'
             editable={false}
           />
@@ -176,27 +167,42 @@ export default function App() {
             />
             <Text style={styles.text}>Elementos: {numElementos}</Text>
           </View>
-
-        </View >
+        </View>
       </ScrollView>
       <View style={styles.areaContenido}>
         <FlatList
           data={productos}
-          renderItem={(obj) => {
+          renderItem={({ index, item }) => {
             return <ItemProducto
-              indice={obj.index}
-              producto={obj.item}
+              indice={index}
+              producto={item}
             />
           }}
-          keyExtractor={(item) => { item.id }}
+          keyExtractor={item => item.id.toString()}
         />
       </View>
       <View style={styles.areaPie}>
         <Text>Sebastián Chamorro</Text>
       </View>
 
+      <Modal
+        transparent={true}
+        visible={modalVisible}
+        animationType="slide"
+      >
+        <View style={styles.modalContainer}>
+          <View style={styles.modalContent}>
+            <Text>Está seguro que quiere eliminar?</Text>
+            <View style={styles.modalButtons}>
+              <Button title="Aceptar" onPress={eliminarProducto} />
+              <Button title="Cancelar" onPress={() => setModalVisible(false)} />
+            </View>
+          </View>
+        </View>
+      </Modal>
+
       <StatusBar style="auto" />
-    </View >
+    </View>
   );
 }
 
@@ -294,5 +300,23 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'flex-end'
   },
-
+  modalContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+  },
+  modalContent: {
+    width: 300,
+    padding: 20,
+    backgroundColor: 'white',
+    borderRadius: 10,
+    alignItems: 'center',
+  },
+  modalButtons: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    width: '100%',
+    marginTop: 20,
+  },
 });
