@@ -1,0 +1,12 @@
+new project maven
+webapp-j2ee13
+------------depues de crear------
+maven install
+copear el codigo de conexión 
+--------------Posible error en React Native-------------
+https://docs.expo.dev/workflow/upgrading-expo-sdk-walkthrough/
+
+
+
+
+

@@ -123,112 +123,87 @@ public class PedidosBDD {
 			throw e;
 		}
 	}
-	
-	
+
 	public ArrayList<Pedido> buscar(String identifcadorProve) throws KrakedevException {
 		ArrayList<Pedido> pedidos = new ArrayList<Pedido>();
-		ArrayList<DetallePedido> detalles = new ArrayList<DetallePedido>();
 		Connection con = null;
 		PreparedStatement ps = null;
 		ResultSet rs = null;
 		Pedido pedido = null;
+		int ultimoNumeroPedido = -1;
 		try {
 			con = ConexionBDD.obtenerConexion();
 			ps = con.prepareStatement(
 					"select cp.numero, prov.identificador, td.codigo as codigo_TD, prov.nombre as nombre_prove, prov.telefono, prov.correo, prov.direccion, cp.fecha, ep.codigo as codigo_estado, ep.descripcion as descripcion_EP, "
-					+ "dp.codigo as codigo_DP, prod.codigo_pro, prod.nombre as nombre_prod, udm.nombre as nombreUDM, prod.precio_venta, prod.tiene_iva, prod.coste, cat.codigo_cat, prod.stock, dp.cantidad, dp.subtotal, dp.cantidad_recibida "
-					+ "from cabecera_pedido cp, detalle_pedido dp, proveedores prov, tipo_documento td, estados_pedido ep, productos prod, unidades_medida udm, categorias cat "
-					+ "where cp.proveedor = ? and cp.numero = dp.cabecera_pedido and cp.proveedor = prov.identificador and td.codigo = prov.tipo_documento "
-					+ "and cp.estado = ep.codigo and prod.codigo_pro = dp.producto and prod.udm = udm.nombre and cat.codigo_cat = prod.categoria");
+							+ "dp.codigo as codigo_DP, prod.codigo_pro, prod.nombre as nombre_prod, udm.nombre as nombreUDM, prod.precio_venta, prod.tiene_iva, prod.coste, cat.codigo_cat, prod.stock, dp.cantidad, dp.subtotal, dp.cantidad_recibida "
+							+ "from cabecera_pedido cp, detalle_pedido dp, proveedores prov, tipo_documento td, estados_pedido ep, productos prod, unidades_medida udm, categorias cat "
+							+ "where cp.proveedor = ? and cp.numero = dp.cabecera_pedido and cp.proveedor = prov.identificador and td.codigo = prov.tipo_documento "
+							+ "and cp.estado = ep.codigo and prod.codigo_pro = dp.producto and prod.udm = udm.nombre and cat.codigo_cat = prod.categoria");
 			ps.setString(1, identifcadorProve);
 			rs = ps.executeQuery();
 
-			while (rs.next()) {
+			ArrayList<DetallePedido> detalles = null;
 
+			while (rs.next()) {
 				int numeroCP = rs.getInt("numero");
-				Date fecha = rs.getDate("fecha");
-				String CodigoEstado = rs.getString("codigo_estado");
-				String DescripcionEstado = rs.getString("descripcion_ep");
-				
-				String identificador = rs.getString("identificador");
-				String codigoTipoDucu = rs.getString("codigo_td");
-				String nombreProveedor = rs.getString("nombre_prove");
-				String telefono = rs.getString("telefono");
-				String correo = rs.getString("correo");
-				String direccion = rs.getString("direccion");
-				
-				
-				int codigoDetallePedido = rs.getInt("codigo_dp");
-				int cantidad = rs.getInt("cantidad");
-				String subtotalStr = rs.getString("subtotal"); 
-				BigDecimal subtotal = new BigDecimal(subtotalStr.replace("$", "").replace(",", "").trim());
-				int cantidadRecibida = rs.getInt("cantidad_recibida");
-				
-				int codigoProdu = rs.getInt("codigo_pro");
-				String nombreProdu = rs.getString("nombre_prod");
-				String NombreUDM = rs.getString("nombreudm");
-				String precioVentaStr = rs.getString("precio_venta");
-				BigDecimal precioVenta = new BigDecimal(precioVentaStr.replace("$", "").replace(",", "").trim());
-				boolean tieneIva = rs.getBoolean("tiene_iva");
-				
-				String CosteStr = rs.getString("Coste");
-				BigDecimal Coste = new BigDecimal(CosteStr.replace("$", "").replace(",", "").trim());
-				int codigoCategoria = rs.getInt("codigo_cat");
-				int stock = rs.getInt("stock");
-				
-				EstadoPedido EP = new EstadoPedido();
-				EP.setCodigo(CodigoEstado);
-				EP.setDescripcion(DescripcionEstado);
-			
-				TipoDocumento TD = new TipoDocumento();
-				TD.setCodigo(codigoTipoDucu);
-				
-				Proveedor prov = new Proveedor();
-				prov.setIdentificador(identificador);
-				prov.setTipoDocumento(TD);
-				prov.setNombre(nombreProveedor);
-				prov.setTelefono(telefono);
-				prov.setCorreo(correo);
-				prov.setDireccion(direccion);
-				
-				Pedido pedi = new Pedido();
-				pedi.setNumero(numeroCP);
-				
+
+				if (numeroCP != ultimoNumeroPedido) {
+					if (pedido != null) {
+						pedidos.add(pedido);
+					}
+
+					detalles = new ArrayList<>(); 
+					pedido = new Pedido(); 
+					ultimoNumeroPedido = numeroCP; 
+	
+					pedido.setNumero(numeroCP);
+					pedido.setFecha(rs.getDate("fecha"));
+
+					EstadoPedido EP = new EstadoPedido();
+					EP.setCodigo(rs.getString("codigo_estado"));
+					EP.setDescripcion(rs.getString("descripcion_ep"));
+					pedido.setEstado(EP);
+
+					Proveedor prov = new Proveedor();
+					prov.setIdentificador(rs.getString("identificador"));
+					prov.setNombre(rs.getString("nombre_prove"));
+					prov.setTelefono(rs.getString("telefono"));
+					prov.setCorreo(rs.getString("correo"));
+					prov.setDireccion(rs.getString("direccion"));
+					pedido.setProveedor(prov);
+				}
+
+
 				UnidadDeMedida UDM = new UnidadDeMedida();
-				UDM.setNombre(NombreUDM);
-				
+				UDM.setNombre(rs.getString("nombreudm"));
+
 				Categoria cat = new Categoria();
-				cat.setCodigo(codigoCategoria);
-				
+				cat.setCodigo(rs.getInt("codigo_cat"));
+
 				Producto prod = new Producto();
-				prod.setCodigo(codigoProdu);
-				prod.setNombre(nombreProdu);
+				prod.setCodigo(rs.getInt("codigo_pro"));
+				prod.setNombre(rs.getString("nombre_prod"));
 				prod.setUdm(UDM);
-				prod.setPrecioVenta(precioVenta);
-				prod.setTieneIva(tieneIva);
-				prod.setCoste(Coste);
+				prod.setPrecioVenta(new BigDecimal(rs.getString("precio_venta").replace("$", "").replace(",", "").trim()));
+				prod.setTieneIva(rs.getBoolean("tiene_iva"));
+				prod.setCoste(new BigDecimal(rs.getString("coste").replace("$", "").replace(",", "").trim()));
 				prod.setCategoria(cat);
-				prod.setStock(stock);
-				
+				prod.setStock(rs.getInt("stock"));
+
 				DetallePedido DP = new DetallePedido();
-				DP.setCodigo(codigoDetallePedido);
-				DP.setCabeceraPedido(pedi);
+				DP.setCodigo(rs.getInt("codigo_dp"));
+				DP.setCabeceraPedido(pedido);
 				DP.setProducto(prod);
-				DP.setCantidad(cantidad);
-				DP.setSubtotal(subtotal);
-				DP.setCatidadRecibida(cantidadRecibida);
-				
+				DP.setCantidad(rs.getInt("cantidad"));
+				DP.setSubtotal(new BigDecimal(rs.getString("subtotal").replace("$", "").replace(",", "").trim()));
+				DP.setCatidadRecibida(rs.getInt("cantidad_recibida"));
+
 				detalles.add(DP);
-				
-				pedido = new Pedido();
-				pedido.setNumero(numeroCP);
-				pedido.setProveedor(prov);
-				pedido.setFecha(fecha);
-				pedido.setEstado(EP);
 				pedido.setDetalles(detalles);
-				
+			}
+
+			if (pedido != null) {
 				pedidos.add(pedido);
-				
 			}
 
 		} catch (SQLException e) {
@@ -236,11 +211,24 @@ public class PedidosBDD {
 			throw new KrakedevException("Error al consultar. Detalle: " + e.getMessage());
 		} catch (KrakedevException e) {
 			throw e;
+		} finally {
+			if (rs != null)
+				try {
+					rs.close();
+				} catch (SQLException e) {
+				}
+			if (ps != null)
+				try {
+					ps.close();
+				} catch (SQLException e) {
+				}
+			if (con != null)
+				try {
+					con.close();
+				} catch (SQLException e) {
+				}
 		}
 
 		return pedidos;
 	}
-
-
-
 }

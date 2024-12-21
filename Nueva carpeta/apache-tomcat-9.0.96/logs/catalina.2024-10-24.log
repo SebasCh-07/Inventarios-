@@ -1,0 +1,606 @@
+24-Oct-2024 20:00:09.550 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.96
+24-Oct-2024 20:00:09.553 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 3 2024 19:44:30 UTC
+24-Oct-2024 20:00:09.554 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.96.0
+24-Oct-2024 20:00:09.554 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+24-Oct-2024 20:00:09.554 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+24-Oct-2024 20:00:09.554 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+24-Oct-2024 20:00:09.554 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-23
+24-Oct-2024 20:00:09.555 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       23+37-2369
+24-Oct-2024 20:00:09.555 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+24-Oct-2024 20:00:09.555 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 20:00:09.556 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 20:00:09.565 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+24-Oct-2024 20:00:09.566 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+24-Oct-2024 20:00:09.566 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+24-Oct-2024 20:00:09.567 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+24-Oct-2024 20:00:09.567 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+24-Oct-2024 20:00:09.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\conf\logging.properties
+24-Oct-2024 20:00:09.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Oct-2024 20:00:09.568 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+24-Oct-2024 20:00:09.569 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Oct-2024 20:00:09.569 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dignore.endorsed.dirs=
+24-Oct-2024 20:00:09.569 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 20:00:09.570 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 20:00:09.570 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\temp
+24-Oct-2024 20:00:09.574 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [1.3.1] con la versión APR [1.7.4].
+24-Oct-2024 20:00:09.575 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Capacidades APR: IPv6 [true], enviar fichero [true], aceptar filtros [false], aleatorio [true], UDS [true].
+24-Oct-2024 20:00:09.575 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-Oct-2024 20:00:09.584 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 3.0.14 4 Jun 2024]
+24-Oct-2024 20:00:09.971 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+24-Oct-2024 20:00:10.002 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [704] milliseconds
+24-Oct-2024 20:00:10.056 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+24-Oct-2024 20:00:10.056 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.96]
+24-Oct-2024 20:00:10.077 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ejemploweb.war] de la aplicación web
+24-Oct-2024 20:00:11.533 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+24-Oct-2024 20:00:12.880 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ejemploweb.war] has finished in [2.803] ms
+24-Oct-2024 20:00:12.881 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\docs] de la aplicación web
+24-Oct-2024 20:00:12.933 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\docs] has finished in [52] ms
+24-Oct-2024 20:00:12.934 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\examples] de la aplicación web
+24-Oct-2024 20:00:13.531 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\examples] has finished in [597] ms
+24-Oct-2024 20:00:13.531 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\host-manager] de la aplicación web
+24-Oct-2024 20:00:13.589 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\host-manager] has finished in [58] ms
+24-Oct-2024 20:00:13.590 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\manager] de la aplicación web
+24-Oct-2024 20:00:13.645 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\manager] has finished in [55] ms
+24-Oct-2024 20:00:13.646 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ROOT] de la aplicación web
+24-Oct-2024 20:00:13.686 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ROOT] has finished in [40] ms
+24-Oct-2024 20:00:13.692 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+24-Oct-2024 20:00:13.716 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3712] milliseconds
+24-Oct-2024 20:04:24.015 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/ejemploweb]
+24-Oct-2024 20:04:24.063 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ejemploweb.war] de la aplicación web
+24-Oct-2024 20:04:25.029 INFO [Catalina-utility-2] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+24-Oct-2024 20:04:26.361 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ejemploweb.war] has finished in [2.297] ms
+24-Oct-2024 21:57:03.792 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/ejemploweb]
+24-Oct-2024 21:57:03.903 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ejemploweb.war] de la aplicación web
+24-Oct-2024 21:57:04.972 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+24-Oct-2024 21:57:06.157 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ejemploweb.war] has finished in [2.254] ms
+24-Oct-2024 21:57:46.547 SEVERE [http-nio-8080-exec-13] org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.aroundWriteTo MessageBodyWriter not found for media type=text/html, type=class com.krakedev.entidades.Cliente, genericType=class com.krakedev.entidades.Cliente.
+24-Oct-2024 21:58:56.466 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.96
+24-Oct-2024 21:58:56.469 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 3 2024 19:44:30 UTC
+24-Oct-2024 21:58:56.470 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.96.0
+24-Oct-2024 21:58:56.471 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+24-Oct-2024 21:58:56.471 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+24-Oct-2024 21:58:56.471 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+24-Oct-2024 21:58:56.471 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-23
+24-Oct-2024 21:58:56.471 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       23+37-2369
+24-Oct-2024 21:58:56.472 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+24-Oct-2024 21:58:56.472 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 21:58:56.472 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 21:58:56.480 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+24-Oct-2024 21:58:56.482 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+24-Oct-2024 21:58:56.483 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+24-Oct-2024 21:58:56.483 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+24-Oct-2024 21:58:56.483 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+24-Oct-2024 21:58:56.484 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\conf\logging.properties
+24-Oct-2024 21:58:56.484 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Oct-2024 21:58:56.484 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+24-Oct-2024 21:58:56.485 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Oct-2024 21:58:56.485 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dignore.endorsed.dirs=
+24-Oct-2024 21:58:56.486 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 21:58:56.486 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 21:58:56.486 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\temp
+24-Oct-2024 21:58:56.492 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [1.3.1] con la versión APR [1.7.4].
+24-Oct-2024 21:58:56.492 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Capacidades APR: IPv6 [true], enviar fichero [true], aceptar filtros [false], aleatorio [true], UDS [true].
+24-Oct-2024 21:58:56.493 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-Oct-2024 21:58:56.499 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 3.0.14 4 Jun 2024]
+24-Oct-2024 21:58:56.891 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+24-Oct-2024 21:58:56.932 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [709] milliseconds
+24-Oct-2024 21:58:56.994 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+24-Oct-2024 21:58:56.995 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.96]
+24-Oct-2024 21:58:57.015 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ejemploweb.war] de la aplicación web
+24-Oct-2024 21:58:58.200 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+24-Oct-2024 21:58:59.506 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ejemploweb.war] has finished in [2.491] ms
+24-Oct-2024 21:58:59.508 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\docs] de la aplicación web
+24-Oct-2024 21:58:59.559 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\docs] has finished in [51] ms
+24-Oct-2024 21:58:59.559 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\examples] de la aplicación web
+24-Oct-2024 21:59:00.222 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\examples] has finished in [663] ms
+24-Oct-2024 21:59:00.223 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\host-manager] de la aplicación web
+24-Oct-2024 21:59:00.323 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\host-manager] has finished in [100] ms
+24-Oct-2024 21:59:00.326 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\manager] de la aplicación web
+24-Oct-2024 21:59:00.446 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\manager] has finished in [121] ms
+24-Oct-2024 21:59:00.449 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ROOT] de la aplicación web
+24-Oct-2024 21:59:00.520 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ROOT] has finished in [71] ms
+24-Oct-2024 21:59:00.529 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+24-Oct-2024 21:59:00.578 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3641] milliseconds
+24-Oct-2024 21:59:05.531 SEVERE [http-nio-8080-exec-1] org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.aroundWriteTo MessageBodyWriter not found for media type=text/html, type=class com.krakedev.entidades.Cliente, genericType=class com.krakedev.entidades.Cliente.
+24-Oct-2024 21:59:20.463 SEVERE [http-nio-8080-exec-3] org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.aroundWriteTo MessageBodyWriter not found for media type=application/xml, type=class com.krakedev.entidades.Cliente, genericType=class com.krakedev.entidades.Cliente.
+24-Oct-2024 22:01:39.799 SEVERE [http-nio-8080-exec-9] org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.aroundWriteTo MessageBodyWriter not found for media type=application/xml, type=class com.krakedev.entidades.Cliente, genericType=class com.krakedev.entidades.Cliente.
+24-Oct-2024 22:08:51.532 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/ejemploweb]
+24-Oct-2024 22:08:51.583 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ejemploweb.war] de la aplicación web
+24-Oct-2024 22:08:52.556 INFO [Catalina-utility-1] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+24-Oct-2024 22:08:53.909 INFO [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ejemploweb.war] has finished in [2.326] ms
+24-Oct-2024 22:09:23.057 SEVERE [http-nio-8080-exec-7] org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.aroundWriteTo MessageBodyWriter not found for media type=application/json, type=class com.krakedev.entidades.Cliente, genericType=class com.krakedev.entidades.Cliente.
+24-Oct-2024 22:09:57.164 SEVERE [http-nio-8080-exec-7] org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.aroundWriteTo MessageBodyWriter not found for media type=application/json, type=class com.krakedev.entidades.Cliente, genericType=class com.krakedev.entidades.Cliente.
+24-Oct-2024 22:10:21.634 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.96
+24-Oct-2024 22:10:21.638 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 3 2024 19:44:30 UTC
+24-Oct-2024 22:10:21.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.96.0
+24-Oct-2024 22:10:21.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+24-Oct-2024 22:10:21.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+24-Oct-2024 22:10:21.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+24-Oct-2024 22:10:21.639 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-23
+24-Oct-2024 22:10:21.640 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       23+37-2369
+24-Oct-2024 22:10:21.640 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+24-Oct-2024 22:10:21.640 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 22:10:21.640 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 22:10:21.648 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+24-Oct-2024 22:10:21.649 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+24-Oct-2024 22:10:21.649 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+24-Oct-2024 22:10:21.649 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+24-Oct-2024 22:10:21.650 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+24-Oct-2024 22:10:21.650 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\conf\logging.properties
+24-Oct-2024 22:10:21.650 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Oct-2024 22:10:21.651 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+24-Oct-2024 22:10:21.651 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Oct-2024 22:10:21.652 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dignore.endorsed.dirs=
+24-Oct-2024 22:10:21.652 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 22:10:21.652 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 22:10:21.653 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\temp
+24-Oct-2024 22:10:21.657 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [1.3.1] con la versión APR [1.7.4].
+24-Oct-2024 22:10:21.657 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Capacidades APR: IPv6 [true], enviar fichero [true], aceptar filtros [false], aleatorio [true], UDS [true].
+24-Oct-2024 22:10:21.658 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-Oct-2024 22:10:21.665 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 3.0.14 4 Jun 2024]
+24-Oct-2024 22:10:22.092 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+24-Oct-2024 22:10:22.127 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [778] milliseconds
+24-Oct-2024 22:10:22.182 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+24-Oct-2024 22:10:22.182 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.96]
+24-Oct-2024 22:10:22.203 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ejemploweb.war] de la aplicación web
+24-Oct-2024 22:10:23.584 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+24-Oct-2024 22:10:25.079 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ejemploweb.war] has finished in [2.876] ms
+24-Oct-2024 22:10:25.080 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\docs] de la aplicación web
+24-Oct-2024 22:10:25.133 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\docs] has finished in [53] ms
+24-Oct-2024 22:10:25.133 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\examples] de la aplicación web
+24-Oct-2024 22:10:25.721 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\examples] has finished in [588] ms
+24-Oct-2024 22:10:25.721 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\host-manager] de la aplicación web
+24-Oct-2024 22:10:25.773 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\host-manager] has finished in [51] ms
+24-Oct-2024 22:10:25.774 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\manager] de la aplicación web
+24-Oct-2024 22:10:25.832 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\manager] has finished in [58] ms
+24-Oct-2024 22:10:25.833 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ROOT] de la aplicación web
+24-Oct-2024 22:10:25.869 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ROOT] has finished in [35] ms
+24-Oct-2024 22:10:25.874 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+24-Oct-2024 22:10:25.901 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3771] milliseconds
+24-Oct-2024 22:10:34.639 SEVERE [http-nio-8080-exec-1] org.glassfish.jersey.message.internal.WriterInterceptorExecutor$TerminalWriterInterceptor.aroundWriteTo MessageBodyWriter not found for media type=application/json, type=class com.krakedev.entidades.Cliente, genericType=class com.krakedev.entidades.Cliente.
+24-Oct-2024 22:12:16.857 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/ejemploweb]
+24-Oct-2024 22:12:22.740 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.96
+24-Oct-2024 22:12:22.744 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 3 2024 19:44:30 UTC
+24-Oct-2024 22:12:22.745 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.96.0
+24-Oct-2024 22:12:22.745 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+24-Oct-2024 22:12:22.745 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+24-Oct-2024 22:12:22.745 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+24-Oct-2024 22:12:22.745 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-23
+24-Oct-2024 22:12:22.746 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       23+37-2369
+24-Oct-2024 22:12:22.746 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+24-Oct-2024 22:12:22.746 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 22:12:22.746 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 22:12:22.756 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+24-Oct-2024 22:12:22.756 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+24-Oct-2024 22:12:22.756 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+24-Oct-2024 22:12:22.756 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+24-Oct-2024 22:12:22.757 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+24-Oct-2024 22:12:22.758 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\conf\logging.properties
+24-Oct-2024 22:12:22.760 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Oct-2024 22:12:22.761 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+24-Oct-2024 22:12:22.761 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Oct-2024 22:12:22.762 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dignore.endorsed.dirs=
+24-Oct-2024 22:12:22.762 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 22:12:22.763 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 22:12:22.763 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\temp
+24-Oct-2024 22:12:22.767 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [1.3.1] con la versión APR [1.7.4].
+24-Oct-2024 22:12:22.767 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Capacidades APR: IPv6 [true], enviar fichero [true], aceptar filtros [false], aleatorio [true], UDS [true].
+24-Oct-2024 22:12:22.768 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-Oct-2024 22:12:22.775 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 3.0.14 4 Jun 2024]
+24-Oct-2024 22:12:23.165 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+24-Oct-2024 22:12:23.196 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [721] milliseconds
+24-Oct-2024 22:12:23.250 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+24-Oct-2024 22:12:23.251 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.96]
+24-Oct-2024 22:12:23.273 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ejemploweb.war] de la aplicación web
+24-Oct-2024 22:12:23.295 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ejemploweb] was found with a last modified time that did not match the associated WAR. It will be deleted.
+24-Oct-2024 22:12:25.288 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+24-Oct-2024 22:12:26.765 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ejemploweb.war] has finished in [3.492] ms
+24-Oct-2024 22:12:26.766 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\docs] de la aplicación web
+24-Oct-2024 22:12:26.815 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\docs] has finished in [49] ms
+24-Oct-2024 22:12:26.816 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\examples] de la aplicación web
+24-Oct-2024 22:12:27.401 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\examples] has finished in [585] ms
+24-Oct-2024 22:12:27.401 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\host-manager] de la aplicación web
+24-Oct-2024 22:12:27.474 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\host-manager] has finished in [73] ms
+24-Oct-2024 22:12:27.475 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\manager] de la aplicación web
+24-Oct-2024 22:12:27.527 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\manager] has finished in [52] ms
+24-Oct-2024 22:12:27.528 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ROOT] de la aplicación web
+24-Oct-2024 22:12:27.566 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ROOT] has finished in [39] ms
+24-Oct-2024 22:12:27.572 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+24-Oct-2024 22:12:27.595 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4397] milliseconds
+24-Oct-2024 22:16:47.917 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/ejemploweb]
+24-Oct-2024 22:16:56.258 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.96
+24-Oct-2024 22:16:56.261 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 3 2024 19:44:30 UTC
+24-Oct-2024 22:16:56.261 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.96.0
+24-Oct-2024 22:16:56.261 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+24-Oct-2024 22:16:56.262 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+24-Oct-2024 22:16:56.262 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+24-Oct-2024 22:16:56.262 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-23
+24-Oct-2024 22:16:56.262 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       23+37-2369
+24-Oct-2024 22:16:56.262 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+24-Oct-2024 22:16:56.262 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 22:16:56.263 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 22:16:56.271 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+24-Oct-2024 22:16:56.272 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+24-Oct-2024 22:16:56.272 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+24-Oct-2024 22:16:56.272 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+24-Oct-2024 22:16:56.273 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+24-Oct-2024 22:16:56.274 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\conf\logging.properties
+24-Oct-2024 22:16:56.274 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Oct-2024 22:16:56.274 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+24-Oct-2024 22:16:56.275 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Oct-2024 22:16:56.275 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dignore.endorsed.dirs=
+24-Oct-2024 22:16:56.275 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 22:16:56.276 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 22:16:56.276 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\temp
+24-Oct-2024 22:16:56.280 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [1.3.1] con la versión APR [1.7.4].
+24-Oct-2024 22:16:56.280 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Capacidades APR: IPv6 [true], enviar fichero [true], aceptar filtros [false], aleatorio [true], UDS [true].
+24-Oct-2024 22:16:56.280 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-Oct-2024 22:16:56.288 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 3.0.14 4 Jun 2024]
+24-Oct-2024 22:16:56.651 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+24-Oct-2024 22:16:56.683 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [666] milliseconds
+24-Oct-2024 22:16:56.735 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+24-Oct-2024 22:16:56.736 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.96]
+24-Oct-2024 22:16:56.759 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ejemploweb.war] de la aplicación web
+24-Oct-2024 22:16:58.723 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+24-Oct-2024 22:17:00.080 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ejemploweb.war] has finished in [3.321] ms
+24-Oct-2024 22:17:00.081 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\docs] de la aplicación web
+24-Oct-2024 22:17:00.129 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\docs] has finished in [47] ms
+24-Oct-2024 22:17:00.129 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\examples] de la aplicación web
+24-Oct-2024 22:17:00.864 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\examples] has finished in [735] ms
+24-Oct-2024 22:17:00.866 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\host-manager] de la aplicación web
+24-Oct-2024 22:17:00.956 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\host-manager] has finished in [90] ms
+24-Oct-2024 22:17:00.958 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\manager] de la aplicación web
+24-Oct-2024 22:17:01.031 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\manager] has finished in [73] ms
+24-Oct-2024 22:17:01.032 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ROOT] de la aplicación web
+24-Oct-2024 22:17:01.085 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ROOT] has finished in [53] ms
+24-Oct-2024 22:17:01.093 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+24-Oct-2024 22:17:01.126 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4439] milliseconds
+24-Oct-2024 22:30:24.863 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.96
+24-Oct-2024 22:30:24.867 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 3 2024 19:44:30 UTC
+24-Oct-2024 22:30:24.868 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.96.0
+24-Oct-2024 22:30:24.868 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+24-Oct-2024 22:30:24.868 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+24-Oct-2024 22:30:24.868 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+24-Oct-2024 22:30:24.869 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-23
+24-Oct-2024 22:30:24.869 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       23+37-2369
+24-Oct-2024 22:30:24.869 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+24-Oct-2024 22:30:24.870 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 22:30:24.870 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 22:30:24.882 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+24-Oct-2024 22:30:24.882 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+24-Oct-2024 22:30:24.882 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+24-Oct-2024 22:30:24.882 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+24-Oct-2024 22:30:24.883 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+24-Oct-2024 22:30:24.884 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\conf\logging.properties
+24-Oct-2024 22:30:24.884 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Oct-2024 22:30:24.884 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+24-Oct-2024 22:30:24.885 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Oct-2024 22:30:24.885 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dignore.endorsed.dirs=
+24-Oct-2024 22:30:24.885 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 22:30:24.886 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 22:30:24.886 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\temp
+24-Oct-2024 22:30:24.895 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [1.3.1] con la versión APR [1.7.4].
+24-Oct-2024 22:30:24.895 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Capacidades APR: IPv6 [true], enviar fichero [true], aceptar filtros [false], aleatorio [true], UDS [true].
+24-Oct-2024 22:30:24.896 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-Oct-2024 22:30:24.902 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 3.0.14 4 Jun 2024]
+24-Oct-2024 22:30:25.394 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+24-Oct-2024 22:30:25.432 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [953] milliseconds
+24-Oct-2024 22:30:25.489 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+24-Oct-2024 22:30:25.489 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.96]
+24-Oct-2024 22:30:25.515 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ejemploweb.war] de la aplicación web
+24-Oct-2024 22:30:25.541 INFO [main] org.apache.catalina.startup.ExpandWar.expand An expanded directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ejemploweb] was found with a last modified time that did not match the associated WAR. It will be deleted.
+24-Oct-2024 22:30:27.704 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+24-Oct-2024 22:30:29.131 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ejemploweb.war] has finished in [3.615] ms
+24-Oct-2024 22:30:29.131 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\docs] de la aplicación web
+24-Oct-2024 22:30:29.182 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\docs] has finished in [51] ms
+24-Oct-2024 22:30:29.182 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\examples] de la aplicación web
+24-Oct-2024 22:30:29.844 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\examples] has finished in [662] ms
+24-Oct-2024 22:30:29.845 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\host-manager] de la aplicación web
+24-Oct-2024 22:30:29.918 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\host-manager] has finished in [73] ms
+24-Oct-2024 22:30:29.919 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\manager] de la aplicación web
+24-Oct-2024 22:30:29.981 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\manager] has finished in [62] ms
+24-Oct-2024 22:30:29.982 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ROOT] de la aplicación web
+24-Oct-2024 22:30:30.025 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ROOT] has finished in [43] ms
+24-Oct-2024 22:30:30.031 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+24-Oct-2024 22:30:30.058 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4624] milliseconds
+24-Oct-2024 22:38:50.894 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/ejemploweb]
+24-Oct-2024 22:38:57.475 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.96
+24-Oct-2024 22:38:57.478 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 3 2024 19:44:30 UTC
+24-Oct-2024 22:38:57.478 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.96.0
+24-Oct-2024 22:38:57.479 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+24-Oct-2024 22:38:57.479 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+24-Oct-2024 22:38:57.479 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+24-Oct-2024 22:38:57.479 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-23
+24-Oct-2024 22:38:57.479 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       23+37-2369
+24-Oct-2024 22:38:57.479 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+24-Oct-2024 22:38:57.480 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 22:38:57.480 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 22:38:57.488 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+24-Oct-2024 22:38:57.489 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+24-Oct-2024 22:38:57.489 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+24-Oct-2024 22:38:57.489 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+24-Oct-2024 22:38:57.490 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+24-Oct-2024 22:38:57.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\conf\logging.properties
+24-Oct-2024 22:38:57.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Oct-2024 22:38:57.491 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+24-Oct-2024 22:38:57.492 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Oct-2024 22:38:57.494 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dignore.endorsed.dirs=
+24-Oct-2024 22:38:57.495 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 22:38:57.495 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 22:38:57.495 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\temp
+24-Oct-2024 22:38:57.499 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [1.3.1] con la versión APR [1.7.4].
+24-Oct-2024 22:38:57.499 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Capacidades APR: IPv6 [true], enviar fichero [true], aceptar filtros [false], aleatorio [true], UDS [true].
+24-Oct-2024 22:38:57.499 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-Oct-2024 22:38:57.507 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 3.0.14 4 Jun 2024]
+24-Oct-2024 22:38:57.934 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+24-Oct-2024 22:38:57.978 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [813] milliseconds
+24-Oct-2024 22:38:58.042 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+24-Oct-2024 22:38:58.043 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.96]
+24-Oct-2024 22:38:58.068 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ejemploweb.war] de la aplicación web
+24-Oct-2024 22:39:00.351 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+24-Oct-2024 22:39:02.187 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ejemploweb.war] has finished in [4.119] ms
+24-Oct-2024 22:39:02.189 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\docs] de la aplicación web
+24-Oct-2024 22:39:02.238 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\docs] has finished in [48] ms
+24-Oct-2024 22:39:02.238 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\examples] de la aplicación web
+24-Oct-2024 22:39:02.871 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\examples] has finished in [633] ms
+24-Oct-2024 22:39:02.872 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\host-manager] de la aplicación web
+24-Oct-2024 22:39:02.938 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\host-manager] has finished in [65] ms
+24-Oct-2024 22:39:02.938 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\manager] de la aplicación web
+24-Oct-2024 22:39:03.004 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\manager] has finished in [65] ms
+24-Oct-2024 22:39:03.004 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ROOT] de la aplicación web
+24-Oct-2024 22:39:03.043 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ROOT] has finished in [39] ms
+24-Oct-2024 22:39:03.052 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+24-Oct-2024 22:39:03.078 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [5096] milliseconds
+24-Oct-2024 23:15:38.584 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.96
+24-Oct-2024 23:15:38.588 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 3 2024 19:44:30 UTC
+24-Oct-2024 23:15:38.589 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.96.0
+24-Oct-2024 23:15:38.589 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+24-Oct-2024 23:15:38.589 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+24-Oct-2024 23:15:38.589 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+24-Oct-2024 23:15:38.589 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-23
+24-Oct-2024 23:15:38.590 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       23+37-2369
+24-Oct-2024 23:15:38.590 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+24-Oct-2024 23:15:38.590 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 23:15:38.590 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 23:15:38.598 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+24-Oct-2024 23:15:38.599 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+24-Oct-2024 23:15:38.599 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+24-Oct-2024 23:15:38.599 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+24-Oct-2024 23:15:38.600 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+24-Oct-2024 23:15:38.600 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\conf\logging.properties
+24-Oct-2024 23:15:38.600 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Oct-2024 23:15:38.601 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+24-Oct-2024 23:15:38.603 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Oct-2024 23:15:38.604 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dignore.endorsed.dirs=
+24-Oct-2024 23:15:38.604 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 23:15:38.604 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 23:15:38.605 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\temp
+24-Oct-2024 23:15:38.609 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [1.3.1] con la versión APR [1.7.4].
+24-Oct-2024 23:15:38.609 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Capacidades APR: IPv6 [true], enviar fichero [true], aceptar filtros [false], aleatorio [true], UDS [true].
+24-Oct-2024 23:15:38.609 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-Oct-2024 23:15:38.616 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 3.0.14 4 Jun 2024]
+24-Oct-2024 23:15:38.972 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+24-Oct-2024 23:15:38.999 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [657] milliseconds
+24-Oct-2024 23:15:39.052 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+24-Oct-2024 23:15:39.054 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.96]
+24-Oct-2024 23:15:39.076 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ejemploweb.war] de la aplicación web
+24-Oct-2024 23:15:40.735 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+24-Oct-2024 23:15:42.057 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ejemploweb.war] has finished in [2.981] ms
+24-Oct-2024 23:15:42.059 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\inventario.war] de la aplicación web
+24-Oct-2024 23:15:43.451 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+24-Oct-2024 23:15:44.640 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\inventario.war] has finished in [2.580] ms
+24-Oct-2024 23:15:44.641 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\docs] de la aplicación web
+24-Oct-2024 23:15:44.691 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\docs] has finished in [51] ms
+24-Oct-2024 23:15:44.692 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\examples] de la aplicación web
+24-Oct-2024 23:15:45.273 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\examples] has finished in [581] ms
+24-Oct-2024 23:15:45.274 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\host-manager] de la aplicación web
+24-Oct-2024 23:15:45.325 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\host-manager] has finished in [51] ms
+24-Oct-2024 23:15:45.325 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\manager] de la aplicación web
+24-Oct-2024 23:15:45.385 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\manager] has finished in [60] ms
+24-Oct-2024 23:15:45.386 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ROOT] de la aplicación web
+24-Oct-2024 23:15:45.422 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ROOT] has finished in [36] ms
+24-Oct-2024 23:15:45.428 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+24-Oct-2024 23:15:45.459 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [6456] milliseconds
+24-Oct-2024 23:21:45.874 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/ejemploweb]
+24-Oct-2024 23:21:51.906 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.96
+24-Oct-2024 23:21:51.910 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 3 2024 19:44:30 UTC
+24-Oct-2024 23:21:51.911 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.96.0
+24-Oct-2024 23:21:51.911 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+24-Oct-2024 23:21:51.911 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+24-Oct-2024 23:21:51.911 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+24-Oct-2024 23:21:51.911 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-23
+24-Oct-2024 23:21:51.911 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       23+37-2369
+24-Oct-2024 23:21:51.912 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+24-Oct-2024 23:21:51.912 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 23:21:51.912 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 23:21:51.922 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+24-Oct-2024 23:21:51.922 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+24-Oct-2024 23:21:51.922 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+24-Oct-2024 23:21:51.922 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+24-Oct-2024 23:21:51.923 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+24-Oct-2024 23:21:51.923 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\conf\logging.properties
+24-Oct-2024 23:21:51.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Oct-2024 23:21:51.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+24-Oct-2024 23:21:51.924 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Oct-2024 23:21:51.925 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dignore.endorsed.dirs=
+24-Oct-2024 23:21:51.925 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 23:21:51.926 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 23:21:51.926 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\temp
+24-Oct-2024 23:21:51.930 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [1.3.1] con la versión APR [1.7.4].
+24-Oct-2024 23:21:51.931 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Capacidades APR: IPv6 [true], enviar fichero [true], aceptar filtros [false], aleatorio [true], UDS [true].
+24-Oct-2024 23:21:51.931 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-Oct-2024 23:21:51.938 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 3.0.14 4 Jun 2024]
+24-Oct-2024 23:21:52.311 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+24-Oct-2024 23:21:52.341 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [672] milliseconds
+24-Oct-2024 23:21:52.396 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+24-Oct-2024 23:21:52.397 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.96]
+24-Oct-2024 23:21:52.421 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\inventario.war] de la aplicación web
+24-Oct-2024 23:21:54.044 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+24-Oct-2024 23:21:55.343 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\inventario.war] has finished in [2.921] ms
+24-Oct-2024 23:21:55.344 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\docs] de la aplicación web
+24-Oct-2024 23:21:55.390 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\docs] has finished in [46] ms
+24-Oct-2024 23:21:55.391 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\examples] de la aplicación web
+24-Oct-2024 23:21:55.935 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\examples] has finished in [543] ms
+24-Oct-2024 23:21:55.935 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\host-manager] de la aplicación web
+24-Oct-2024 23:21:55.990 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\host-manager] has finished in [55] ms
+24-Oct-2024 23:21:55.992 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\manager] de la aplicación web
+24-Oct-2024 23:21:56.046 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\manager] has finished in [55] ms
+24-Oct-2024 23:21:56.047 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ROOT] de la aplicación web
+24-Oct-2024 23:21:56.081 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ROOT] has finished in [34] ms
+24-Oct-2024 23:21:56.087 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+24-Oct-2024 23:21:56.109 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3764] milliseconds
+24-Oct-2024 23:24:26.286 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.undeploy Repliegue (undeploy) de la aplicación web que tiene como trayectoria de contexto [/inventario]
+24-Oct-2024 23:24:26.356 INFO [Catalina-utility-2] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\inventario.war] de la aplicación web
+24-Oct-2024 23:24:30.512 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.96
+24-Oct-2024 23:24:30.516 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 3 2024 19:44:30 UTC
+24-Oct-2024 23:24:30.516 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.96.0
+24-Oct-2024 23:24:30.517 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+24-Oct-2024 23:24:30.517 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+24-Oct-2024 23:24:30.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+24-Oct-2024 23:24:30.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-23
+24-Oct-2024 23:24:30.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       23+37-2369
+24-Oct-2024 23:24:30.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+24-Oct-2024 23:24:30.518 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 23:24:30.519 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 23:24:30.526 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+24-Oct-2024 23:24:30.526 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+24-Oct-2024 23:24:30.526 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+24-Oct-2024 23:24:30.529 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+24-Oct-2024 23:24:30.529 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+24-Oct-2024 23:24:30.529 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\conf\logging.properties
+24-Oct-2024 23:24:30.530 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Oct-2024 23:24:30.530 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+24-Oct-2024 23:24:30.530 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Oct-2024 23:24:30.531 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dignore.endorsed.dirs=
+24-Oct-2024 23:24:30.531 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 23:24:30.531 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 23:24:30.532 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\temp
+24-Oct-2024 23:24:30.536 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [1.3.1] con la versión APR [1.7.4].
+24-Oct-2024 23:24:30.537 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Capacidades APR: IPv6 [true], enviar fichero [true], aceptar filtros [false], aleatorio [true], UDS [true].
+24-Oct-2024 23:24:30.537 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-Oct-2024 23:24:30.544 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 3.0.14 4 Jun 2024]
+24-Oct-2024 23:24:30.905 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+24-Oct-2024 23:24:30.941 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [677] milliseconds
+24-Oct-2024 23:24:30.997 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+24-Oct-2024 23:24:30.998 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.96]
+24-Oct-2024 23:24:31.024 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\inventario.war] de la aplicación web
+24-Oct-2024 23:24:32.756 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+24-Oct-2024 23:24:34.097 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\inventario.war] has finished in [3.073] ms
+24-Oct-2024 23:24:34.099 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\docs] de la aplicación web
+24-Oct-2024 23:24:34.149 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\docs] has finished in [50] ms
+24-Oct-2024 23:24:34.150 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\examples] de la aplicación web
+24-Oct-2024 23:24:34.698 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\examples] has finished in [548] ms
+24-Oct-2024 23:24:34.698 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\host-manager] de la aplicación web
+24-Oct-2024 23:24:34.751 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\host-manager] has finished in [53] ms
+24-Oct-2024 23:24:34.752 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\manager] de la aplicación web
+24-Oct-2024 23:24:34.806 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\manager] has finished in [54] ms
+24-Oct-2024 23:24:34.806 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ROOT] de la aplicación web
+24-Oct-2024 23:24:34.843 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ROOT] has finished in [37] ms
+24-Oct-2024 23:24:34.849 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+24-Oct-2024 23:24:34.873 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3926] milliseconds
+24-Oct-2024 23:45:18.749 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.96
+24-Oct-2024 23:45:18.753 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 3 2024 19:44:30 UTC
+24-Oct-2024 23:45:18.753 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.96.0
+24-Oct-2024 23:45:18.753 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+24-Oct-2024 23:45:18.754 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+24-Oct-2024 23:45:18.754 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+24-Oct-2024 23:45:18.754 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-23
+24-Oct-2024 23:45:18.754 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       23+37-2369
+24-Oct-2024 23:45:18.754 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+24-Oct-2024 23:45:18.755 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 23:45:18.755 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 23:45:18.765 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+24-Oct-2024 23:45:18.765 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+24-Oct-2024 23:45:18.765 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+24-Oct-2024 23:45:18.765 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+24-Oct-2024 23:45:18.766 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+24-Oct-2024 23:45:18.767 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\conf\logging.properties
+24-Oct-2024 23:45:18.767 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Oct-2024 23:45:18.768 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+24-Oct-2024 23:45:18.768 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Oct-2024 23:45:18.768 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dignore.endorsed.dirs=
+24-Oct-2024 23:45:18.769 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 23:45:18.769 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 23:45:18.769 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\temp
+24-Oct-2024 23:45:18.774 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [1.3.1] con la versión APR [1.7.4].
+24-Oct-2024 23:45:18.774 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Capacidades APR: IPv6 [true], enviar fichero [true], aceptar filtros [false], aleatorio [true], UDS [true].
+24-Oct-2024 23:45:18.775 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-Oct-2024 23:45:18.782 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 3.0.14 4 Jun 2024]
+24-Oct-2024 23:45:19.141 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+24-Oct-2024 23:45:19.171 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [663] milliseconds
+24-Oct-2024 23:45:19.220 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+24-Oct-2024 23:45:19.220 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.96]
+24-Oct-2024 23:45:19.244 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\inventario.war] de la aplicación web
+24-Oct-2024 23:45:20.884 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+24-Oct-2024 23:45:22.179 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\inventario.war] has finished in [2.934] ms
+24-Oct-2024 23:45:22.180 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\docs] de la aplicación web
+24-Oct-2024 23:45:22.227 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\docs] has finished in [47] ms
+24-Oct-2024 23:45:22.227 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\examples] de la aplicación web
+24-Oct-2024 23:45:22.784 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\examples] has finished in [557] ms
+24-Oct-2024 23:45:22.784 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\host-manager] de la aplicación web
+24-Oct-2024 23:45:22.836 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\host-manager] has finished in [52] ms
+24-Oct-2024 23:45:22.837 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\manager] de la aplicación web
+24-Oct-2024 23:45:22.891 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\manager] has finished in [53] ms
+24-Oct-2024 23:45:22.891 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ROOT] de la aplicación web
+24-Oct-2024 23:45:22.928 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ROOT] has finished in [37] ms
+24-Oct-2024 23:45:22.935 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+24-Oct-2024 23:45:22.963 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [3788] milliseconds
+24-Oct-2024 23:51:44.354 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Nombre de la versión del servidor: Apache Tomcat/9.0.96
+24-Oct-2024 23:51:44.358 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:                      Oct 3 2024 19:44:30 UTC
+24-Oct-2024 23:51:44.358 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Número de versión de servidor:     9.0.96.0
+24-Oct-2024 23:51:44.358 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:                           Windows 10
+24-Oct-2024 23:51:44.358 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Versión de Systema Operativo:      10.0
+24-Oct-2024 23:51:44.358 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Arquitectura:                      amd64
+24-Oct-2024 23:51:44.359 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:                         C:\Program Files\Java\jdk-23
+24-Oct-2024 23:51:44.359 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:                       23+37-2369
+24-Oct-2024 23:51:44.359 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Vededor JVM:                       Oracle Corporation
+24-Oct-2024 23:51:44.360 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:                     C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 23:51:44.360 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:                     C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 23:51:44.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.lang=ALL-UNNAMED
+24-Oct-2024 23:51:44.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.io=ALL-UNNAMED
+24-Oct-2024 23:51:44.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util=ALL-UNNAMED
+24-Oct-2024 23:51:44.368 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+24-Oct-2024 23:51:44.369 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+24-Oct-2024 23:51:44.370 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.config.file=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\conf\logging.properties
+24-Oct-2024 23:51:44.370 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+24-Oct-2024 23:51:44.370 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djdk.tls.ephemeralDHKeySize=2048
+24-Oct-2024 23:51:44.371 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+24-Oct-2024 23:51:44.371 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dignore.endorsed.dirs=
+24-Oct-2024 23:51:44.371 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.base=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 23:51:44.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Dcatalina.home=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96
+24-Oct-2024 23:51:44.372 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument:             -Djava.io.tmpdir=C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\temp
+24-Oct-2024 23:51:44.376 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Cargada la biblioteca nativa APR de Apache Tomcat [1.3.1] con la versión APR [1.7.4].
+24-Oct-2024 23:51:44.377 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Capacidades APR: IPv6 [true], enviar fichero [true], aceptar filtros [false], aleatorio [true], UDS [true].
+24-Oct-2024 23:51:44.378 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+24-Oct-2024 23:51:44.384 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL inicializado correctamente [OpenSSL 3.0.14 4 Jun 2024]
+24-Oct-2024 23:51:44.746 INFO [main] org.apache.coyote.AbstractProtocol.init Inicializando el manejador de protocolo ["http-nio-8080"]
+
+24-Oct-2024 23:51:44.775 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [659] milliseconds
+24-Oct-2024 23:51:44.826 INFO [main] org.apache.catalina.core.StandardService.startInternal Arrancando servicio [Catalina]
+24-Oct-2024 23:51:44.828 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.96]
+24-Oct-2024 23:51:44.849 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Despliegue del archivo [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\inventario.war] de la aplicación web
+24-Oct-2024 23:51:46.694 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars Al menos un JAR, que se ha explorado buscando TLDs, aún no contenía TLDs. Activar historial de depuración para este historiador para una completa lista de los JARs que fueron explorados y de los que nos se halló TLDs. Saltarse JARs no necesarios durante la exploración puede dar lugar a una mejora de tiempo significativa en el arranque y compilación de JSP .
+24-Oct-2024 23:51:48.254 INFO [main] org.apache.catalina.startup.HostConfig.deployWAR Deployment of web application archive [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\inventario.war] has finished in [3.405] ms
+24-Oct-2024 23:51:48.259 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\docs] de la aplicación web
+24-Oct-2024 23:51:48.315 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\docs] has finished in [55] ms
+24-Oct-2024 23:51:48.315 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\examples] de la aplicación web
+24-Oct-2024 23:51:49.045 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\examples] has finished in [730] ms
+24-Oct-2024 23:51:49.045 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\host-manager] de la aplicación web
+24-Oct-2024 23:51:49.100 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\host-manager] has finished in [55] ms
+24-Oct-2024 23:51:49.104 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\manager] de la aplicación web
+24-Oct-2024 23:51:49.178 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\manager] has finished in [74] ms
+24-Oct-2024 23:51:49.179 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Desplegando el directorio [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ROOT] de la aplicación web
+24-Oct-2024 23:51:49.219 INFO [main] org.apache.catalina.startup.HostConfig.deployDirectory Deployment of web application directory [C:\Users\CHAMORRO\OneDrive\Imágenes\programacion sebas\apache-tomcat-9.0.96\webapps\ROOT] has finished in [41] ms
+24-Oct-2024 23:51:49.229 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+24-Oct-2024 23:51:49.256 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4477] milliseconds

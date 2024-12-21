@@ -1,0 +1,8 @@
+0:0:0:0:0:0:0:1 - - [01/Dec/2024:20:25:35 -0500] "GET /inventarios-1.0.0/rest/proveedores/buscar/k HTTP/1.1" 200 203
+0:0:0:0:0:0:0:1 - - [01/Dec/2024:20:26:12 -0500] "GET /inventarios-1.0.0/rest/tiposdocumento/recuperar HTTP/1.1" 200 87
+0:0:0:0:0:0:0:1 - - [01/Dec/2024:20:26:17 -0500] "POST /inventarios-1.0.0/rest/proveedores/crear HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [01/Dec/2024:20:26:49 -0500] "GET /inventarios-1.0.0/rest/productos/buscar/mo HTTP/1.1" 200 228
+0:0:0:0:0:0:0:1 - - [01/Dec/2024:20:27:17 -0500] "POST /inventarios-1.0.0/rest/productos/crear HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [01/Dec/2024:20:27:58 -0500] "POST /inventarios-1.0.0/rest/pedidos/registrar HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [01/Dec/2024:20:29:31 -0500] "PUT /inventarios-1.0.0/rest/pedidos/recibir HTTP/1.1" 500 719
+0:0:0:0:0:0:0:1 - - [01/Dec/2024:20:50:14 -0500] "PUT /inventarios-1.0.0/rest/pedidos/recibir HTTP/1.1" 200 -

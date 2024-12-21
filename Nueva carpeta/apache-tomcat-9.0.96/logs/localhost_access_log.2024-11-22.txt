@@ -1,0 +1,5 @@
+0:0:0:0:0:0:0:1 - - [22/Nov/2024:18:40:52 -0500] "GET /inventarios-1.0.0/rest/proveedores/buscar/k HTTP/1.1" 500 719
+0:0:0:0:0:0:0:1 - - [22/Nov/2024:18:47:57 -0500] "GET /inventarios-1.0.0/rest/proveedores/buscar/k HTTP/1.1" 200 203
+0:0:0:0:0:0:0:1 - - [22/Nov/2024:20:06:48 -0500] "POST /inventarios-1.0.0/rest/proveedores/crear HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [22/Nov/2024:20:06:56 -0500] "GET /inventarios-1.0.0/rest/proveedores/buscar/l HTTP/1.1" 200 202
+0:0:0:0:0:0:0:1 - - [22/Nov/2024:20:09:14 -0500] "GET /inventarios-1.0.0/rest/proveedores/buscar/L HTTP/1.1" 200 202

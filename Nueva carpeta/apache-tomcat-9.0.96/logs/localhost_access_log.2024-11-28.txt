@@ -1,0 +1,11 @@
+0:0:0:0:0:0:0:1 - - [28/Nov/2024:20:21:30 -0500] "GET /inventarios-1.0.0/rest/proveedores/buscar/k HTTP/1.1" 200 203
+0:0:0:0:0:0:0:1 - - [28/Nov/2024:20:23:34 -0500] "GET /inventarios-1.0.0/rest/pedidos/registrar HTTP/1.1" 405 693
+0:0:0:0:0:0:0:1 - - [28/Nov/2024:20:24:43 -0500] "POST /inventarios-1.0.0/rest/pedidos/registrar HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [28/Nov/2024:20:56:07 -0500] "POST /inventarios-1.0.0/rest/pedidos/registrar HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [28/Nov/2024:21:41:38 -0500] "PUT /inventarios-1.0.0/rest/pedidos/recibir HTTP/1.1" 405 693
+0:0:0:0:0:0:0:1 - - [28/Nov/2024:21:43:34 -0500] "PUT /inventarios-1.0.0/rest/pedidos/recibir HTTP/1.1" 400 388
+0:0:0:0:0:0:0:1 - - [28/Nov/2024:21:44:04 -0500] "PUT /inventarios-1.0.0/rest/pedidos/recibir HTTP/1.1" 400 531
+0:0:0:0:0:0:0:1 - - [28/Nov/2024:21:44:34 -0500] "PUT /inventarios-1.0.0/rest/pedidos/recibir HTTP/1.1" 500 719
+0:0:0:0:0:0:0:1 - - [28/Nov/2024:21:46:10 -0500] "PUT /inventarios-1.0.0/rest/pedidos/recibir HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [28/Nov/2024:21:50:53 -0500] "POST /inventarios-1.0.0/rest/pedidos/registrar HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [28/Nov/2024:21:51:23 -0500] "PUT /inventarios-1.0.0/rest/pedidos/recibir HTTP/1.1" 200 -
